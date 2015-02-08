@@ -63,7 +63,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html"><img src=<?php echo base_url()."images/logo.png";?> alt="Welcome to Stoooges." class="img-responsive" /></a>
+					<a class="navbar-brand" href="index.html"><img src=<?php echo base_url()."images/logo2.png";?> alt="Welcome to Stoooges." class="img-responsive" /></a>
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
@@ -97,7 +97,7 @@
 							<p>Explanation</p>
 						</div>
 						<div class="icon img-circle">
-							<img src=<?php echo base_url()."images/icon-s.png";?> alt="" />
+							<img src=<?php echo base_url()."images/circle1.png";?> alt="" />
 						</div>
 						<div class="arrow background background1"></div>
 					</div>
@@ -107,7 +107,7 @@
 							<p>Explanation</p>
 						</div>
 						<div class="icon img-circle">
-							<img src=<?php echo base_url()."images/icon-x.png";?> alt="" />
+							<img src=<?php echo base_url()."images/circle2.png";?> alt="" />
 						</div>
 						<div class="arrow background background2"></div>
 					</div>
@@ -117,7 +117,7 @@
 							<p>Explanation</p>
 						</div>
 						<div class="icon img-circle">
-							<img src=<?php echo base_url()."images/icon-g.png";?> alt="" />
+							<img src=<?php echo base_url()."images/circle3.png";?> alt="" />
 						</div>
 						<div class="arrow background background3"></div>
 					</div>
