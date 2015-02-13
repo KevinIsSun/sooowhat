@@ -63,22 +63,22 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html"><img src=<?php echo base_url()."images/logo2.png";?> alt="Welcome to Stoooges." class="img-responsive" /></a>
+					<a class="navbar-brand" href="#home"><img src=<?php echo base_url()."images/logo2.png";?> alt="Welcome to Stoooges." class="img-responsive" /></a>
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#home">首页</a></li>
+						<li><a href="#home">Home</a></li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">关于我们 <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="#staff">导师团队</a></li>
-								<li><a href="#mission">企业文化</a></li>
-								<li><a href="#activities">服务内容</a></li>
-								<li><a href="#testimonials">客户评价</a></li>
+								<li><a href="#staff">Our Team</a></li>
+								<li><a href="#mission">Introduction</a></li>
+								<li><a href="#activities">Our Project</a></li>
+								<li><a href="#testimonials">Customer Evaluation</a></li>
 								<!-- <li><a href="#gallery">团队成员</a></li> -->
 							</ul>
 						</li>
-						<li><a href="#contact">联系我们</a></li>
+						<li><a href="#contact">Contact Us</a></li>
 					</ul>
 				</div>
 			</div>
@@ -144,7 +144,7 @@
 					<div>
 						<div class="item">
 							<img src="images/1vs1.jpg" alt="" />
-							<h4>一对一主导师</h4>
+							<h4>Boss</h4>
 							
 							
 						</div>
@@ -186,7 +186,7 @@
 							<img src="images/standardtest.jpg" alt="" />
 							<h4>标准化考试导师</h4>
 							
-							
+					<!--		
 						</div>
 					</div>
 					<div>
@@ -237,7 +237,7 @@
 							
 						</div>
 					</div>
-
+					-->
 				</div>
 			</div>
 		</section>
@@ -250,7 +250,7 @@
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-sm-12">
-						<h2>Introduce</h2>
+						<h2>Introduction</h2>
 						<h5>Explanation</h5>
 					</div>
 				</div>
@@ -285,7 +285,7 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<h2 class="text-center">Our Project</h2>
-
+						<h5> </h5>
 						<!-- Tabs Start -->
 						<ul class="nav nav-tabs text-center">
 							<li class="active"><a href="#Learn" data-toggle="tab">Project</a></li>
@@ -374,8 +374,8 @@
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-sm-12">
-						<h2>客户评价</h2>
-						<h5>以往客户反馈</h5>
+						<h2>Customer Evaluation</h2>
+						<h5></h5>
 					</div>
 				</div>
 				<div class="row text-center">
@@ -435,35 +435,33 @@
 
 		<!-- ========== CONTACT START ========== -->
 
-		<section  class="background background-imagep" id="contact">
+		<section id="contact">
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-sm-12">
-						<h2>联系我们</h2>
-						<h5>您的意见与反馈</h5>
-
-						<!-- Form Start -->
-						<form role="form" id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://stoooges.wufoo.com/forms/m1tulwy71d660to/#public">
-							<div class="form-group col-sm-4">
-								<input type="text" class="form-control" id="Field1" name = "Field1" placeholder="Name">
-							</div>
-							<div class="form-group col-sm-4">
-								<input type="email" class="form-control" id="Field2" name = "Field2" placeholder="Email">
-							</div>
-							<div class="form-group col-sm-4">
-								<input type="text" class="form-control" id="Field3" name = "Field3" placeholder="Phone">
-							</div>
-							<div class="form-group col-sm-12">
-								<textarea class="form-control" id="Field5" name = "Field5" rows="6" placeholder="Message"></textarea>
-							</div>
-							<input type="hidden" name="idstamp" id="idstamp" value="fshSwax/BUr7tK7ol6WYRRvQc6i1YfEefvVXi4xtQRY=" />
-							<button type="submit" class="btn btn-primary btn-lg">提交</button>
-						</form>
-						<!-- Form End -->
-
-						<p>&nbsp;</p>
-
+						<h2>Contact Us</h2>
+						<h5></h5>
 					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<img height="200px" src="images/contact.png" alt="扫描二维码联系我们">
+					</div>
+					<div class="col-sm-3">
+						<div class="mail-title">Email</div>
+						<div class="mail-content">
+							<a href="mailto:zhangyuhang@sjtu.edu.cn">
+								zhangyuhang@sjtu.edu.cn
+							</a>
+						</div>
+						<div class="address">Address</div>
+						<div>上海市闵行区东川路800号 东上院406室</div>
+					</div>
+					<div class="col-sm-6">
+						<div id="allmap"></div>
+					</div>
+
+					<p>&nbsp;</p>
 				</div>
 			</div>
 		</section>
@@ -473,6 +471,7 @@
 		<!-- ========== MAP START ========== -->
 
 		<!-- Google Map Script -->
+		<!--
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoRMxiPsqJ9SUuaK1KsCAjd3gqnecjlBw&amp;sensor=false"></script>
 		<script type="text/javascript">
 
@@ -562,8 +561,18 @@
 
 			google.maps.event.addDomListener(window, 'load', initialize);
 		</script>
+		-->
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=4ce275c31467dd57f3c32f2b79121f25"></script>
+		<script type="text/javascript">
+			// 百度地图API功能
+			var map = new BMap.Map("allmap");    // 创建Map实例
+			map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+			map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+			map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+			map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+		</script>
 
-		<div id="map-canvas"></div>
+		<div id="map-canvas-dum"></div>
 
 		<!-- ========== MAP END ========== -->
 
@@ -574,12 +583,12 @@
 				<div class="row">
 					<div class="col-sm-4 col-sm-offset-3 text-center ">
 						<p>&copy; Copyright 2015 Sooowhat<br>
-						400-999-8974, QQ:  400-999-8974,  info@stoooges.com<br>
-						Web Design &amp; Development by <a href="http://www.areswang.com/" target="_blank">Ares Wang</a> & Kai Wang</p>
+						151-2103-6028, QQ:  227-606-9174,  info@sooowhat.com<br>
+						Web Development by <a>Zhendong Sun </a>&<a> Yuhang Zhang</a></p>
 						
 					</div>
 					<div class="col-sm-4">
-						<img src="images/wechat.jpg" alt=""/>
+						<img height="100px" src="images/contact.png" alt=""/>
 					</div>
 					<div class="col-sm-1">
 					</div>
