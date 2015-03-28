@@ -4,6 +4,8 @@ class Login extends CI_Controller {
 
 	public function index()
 	{
+		
+		$this->load->library('session');
 		$this->load->helper('url');
 		$this->load->view('login');
 	}
@@ -22,7 +24,14 @@ class Login extends CI_Controller {
 	    $info = $this->loginModel->existUser($submitInfo["username"], $submitInfo["password"]);
 
 	    if ($info) {
+	    	$users = array(
+                   'name'  => $submitInfo["username"],
+                   'logged_in' => TRUE
+               );
+            $this->session->set_userdata($users);
+
 	    	redirect('homepage');
+
 	    }
 
 	    $data['info'] = "登陆失败，请检查用户名和密码";
