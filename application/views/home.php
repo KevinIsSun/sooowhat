@@ -12,7 +12,7 @@
 	<link href=<?php echo base_url()."css/bootstrap.min.css";?> rel="stylesheet">
 
 	<!-- Custom CSS -->
-	<link href='<?=base_url().'css/style.css'?>' rel="stylesheet">
+	<link href=<?php echo base_url()."css/style.css";?> rel="stylesheet">
 
 	<!-- Superslides CSS -->
 	<link href=<?php echo base_url()."css/superslides.css";?> rel="stylesheet">
@@ -94,7 +94,6 @@
 					<div class="col-sm-4">
 						<div class="box background background1">
 							<h3>Original</h3>
-							<p>Explanation</p>
 						</div>
 						<div class="icon img-circle">
 							<img src=<?php echo base_url()."images/circle1.png";?> alt="" />
@@ -104,7 +103,6 @@
 					<div class="col-sm-4">
 						<div class="box background background2">
 							<h3>Out of the box</h3>
-							<p>Explanation</p>
 						</div>
 						<div class="icon img-circle">
 							<img src=<?php echo base_url()."images/circle2.png";?> alt="" />
@@ -113,8 +111,7 @@
 					</div>
 					<div class="col-sm-4">
 						<div class="box background background3">
-							<h3>OnStrategy</h3>
-							<p>Explanation</p>
+							<h3>On Strategy</h3>
 						</div>
 						<div class="icon img-circle">
 							<img src=<?php echo base_url()."images/circle3.png";?> alt="" />
@@ -144,7 +141,7 @@
 					<div>
 						<div class="item">
 							<img src="images/1vs1.jpg" alt="" />
-							<h4>Boss</h4>
+							<h4>Product Manager</h4>
 							
 							
 						</div>
@@ -152,7 +149,7 @@
 					<div>
 						<div class="item">
 							<img src="images/language.jpg" alt="" />
-							<h4>美方语言导师</h4>
+							<h4>Project Manager</h4>
 							
 							
 						</div>
@@ -160,7 +157,7 @@
 					<div>
 						<div class="item">
 							<img src="images/supervisor.jpg" alt="" />
-							<h4>监督委员会导师</h4>
+							<h4>Frontend Engineer</h4>
 							
 							
 						</div>
@@ -168,7 +165,7 @@
 					<div>
 						<div class="item">
 							<img src="images/whyessay.jpg" alt="" />
-							<h4>Why essay导师</h4>
+							<h4>Backend Engineer</h4>
 							
 							
 						</div>
@@ -176,7 +173,7 @@
 					<div>
 						<div class="item">
 							<img src="images/ps.jpg" alt="" />
-							<h4>PS委员会导师</h4>
+							<h4>Quality Assurance Engineer</h4>
 							
 							
 						</div>
@@ -184,7 +181,7 @@
 					<div>
 						<div class="item">
 							<img src="images/standardtest.jpg" alt="" />
-							<h4>标准化考试导师</h4>
+							<h4>Actuary</h4>
 							
 					<!--		
 						</div>
@@ -270,7 +267,7 @@
 				<div class="row text-center">
 					<div class="col-sm-12">
 						<p>&nbsp;</p>
-						<p><a href="#contact" class="btn btn-lg btn-transparent">联系我们</a></p>
+						<p><a href="#contact" class="btn btn-lg btn-transparent">Contact Us</a></p>
 					</div>
 				</div>
 			</div>
@@ -289,10 +286,10 @@
 						<!-- Tabs Start -->
 						<ul class="nav nav-tabs text-center">
 							<li class="active"><a href="#Learn" data-toggle="tab">Project</a></li>
-							<li><a href="#Play" data-toggle="tab">Project</a></li>
-							<li><a href="#Painting" data-toggle="tab">Project</a></li>
-							<li><a href="#Music" data-toggle="tab">Project</a></li>
-							<li><a href="#Sport" data-toggle="tab">Project</a></li>
+							<li><a href="#Play" data-toggle="tab">Project 1</a></li>
+							<li><a href="#Painting" data-toggle="tab">Project 2</a></li>
+							<li><a href="#Music" data-toggle="tab">Project 3</a></li>
+							<li><a href="#Sport" data-toggle="tab">Project 4</a></li>
 						</ul>
 
 						<div class="tab-content">
@@ -425,7 +422,7 @@
 				<div class="row text-center">
 					<div class="col-sm-12">
 						<p>&nbsp;</p>
-						<p><a href="#contact" class="btn btn-lg btn-transparent">加入我们</a></p>
+						<p><a href="#contact" class="btn btn-lg btn-transparent">Contact Us</a></p>
 					</div>
 				</div>
 			</div>
@@ -455,7 +452,7 @@
 							</a>
 						</div>
 						<div class="address">Address</div>
-						<div>上海市闵行区东川路800号 东上院406室</div>
+						<div>800 Dong Chuan Road,Shanghai, 200240, China</div>
 					</div>
 					<div class="col-sm-6">
 						<div id="allmap"></div>

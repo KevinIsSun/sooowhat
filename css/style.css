@@ -1,5 +1,23 @@
 /* GLOBAL STYLES
 ==================================================================*/
+.navbar .container {
+	width: initial;
+} 
+.welcome b {
+	font-weight: bolder;
+}
+.welcome span {
+	font-weight: bold;
+}
+.B {
+	color: RGB(93, 191, 234);
+}
+.O {
+	color: RGB(231,149,61);
+}
+.Y {
+	color: yellow;
+}
 
 body {
 	overflow-x: hidden;
@@ -12,12 +30,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h2{
-	font-family: "Open Sans", Arial, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", sans-serif;
+	font-family: "Century Gothic", Arial, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", sans-serif;
 }
 
 h4,h5,h6 {
 	color: #222;
-	font-family: "Open Sans", Arial, sans-serif;
+	font-family: "Century Gothic", Arial, sans-serif;
 	font-weight: bold;
 }
 
@@ -499,8 +517,23 @@ footer li {
 
 @media (max-width: 767px) {
 
+	#rooms .icon img {
+	  margin-top: -15px;
+	  margin-left: -15px;
+	  height: 90px;
+	}
+	#rooms .icon {
+		background: #fff;
+		height: 90px;
+		left: 50%;
+		margin-left: -45px;
+		padding: 15px;
+		position: absolute;
+		top: -60px;
+		width: 90px;
+	}
 	.welcome {
-		top: 50%;
+		top: 43%;
 	}
 
 	.welcome h1 {
@@ -512,27 +545,159 @@ footer li {
 	}
 
 	#rooms {
-		bottom: auto;
-		position: relative;
+	  bottom: 25px;
+	  position: absolute;
+	  width: 100%;
+	  z-index: 200;
 	}
 
 	#rooms .col-sm-4 {
-		padding: 0;
+		padding: 4px;
+		width: 33.3333%;
+		float: left;
 	}
 
+	#rooms .box h3 {
+		font-size: 17px;
+	}
 	#rooms .box {
-		padding-top: 150px;
+		padding: 55px 0px 60px;
 	}
-
 	#rooms .icon {
-		top: 30px;
+		top: -30px;
 	}
 
 	#rooms .arrow {
-		display: none;
+  bottom: -5px;
+  display: block;
+  height: 30px;
+  left: 50%;
+  margin-left: -15px;
+  position: absolute;
+  width: 30px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 	}
 }
+.B {
+	color: RGB(93, 191, 234);
+}
+.O {
+	color: RGB(231,149,61);
+}
+.Y {
+	color: yellow;
+}
+#allmap {
+	height: 200px;
+}
+.mail-content a {
+	color: RGB(93, 191, 234);
+	font-size: 16px;
+}
+.mail-title,
+.address {
+	font-size: 28px;
+	color: black;
+	font-weight: bold;
+	margin-top: 14px;
+}
+#staff img {
+	width: 180px;
+	height: 220px;
+}
 
+/* MOBILE STYLES
+==================================================================*/
+
+@media (max-width: 350px) {
+	.navbar-toggle {
+	position: relative;
+	float: right;
+	margin-right: 15px;
+	padding: 9px 10px;
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 0;
+	}
+	#rooms .icon img {
+	  margin-top: -15px;
+	  margin-left: -15px;
+	  height: 90px;
+	}
+	#rooms .icon {
+		background: #fff;
+		height: 90px;
+		left: 50%;
+		margin-left: -45px;
+		padding: 15px;
+		position: absolute;
+		top: -60px;
+		width: 90px;
+	}
+	.welcome {
+		top: 45%;
+	}
+
+	.welcome h1 {
+		font-size: 28px;
+	}
+
+	.welcome p {
+		font-size: 14px;
+	}
+
+	#rooms {
+	  bottom: 15px;
+	  position: absolute;
+	  width: 100%;
+	  z-index: 200;
+	}
+
+	#rooms .col-sm-4 {
+		padding: 4px;
+		width: 33.3333%;
+		float: left;
+	}
+
+	#rooms .box h3 {
+		font-size: 15px;
+	}
+	#rooms .box {
+		padding: 55px 0px 30px;
+	}
+	#rooms .icon {
+		top: -30px;
+	}
+
+	#rooms .arrow {
+  bottom: -5px;
+  display: block;
+  height: 30px;
+  left: 50%;
+  margin-left: -15px;
+  position: absolute;
+  width: 30px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+	}
+}
+.B {
+	color: RGB(93, 191, 234);
+}
+.O {
+	color: RGB(231,149,61);
+}
+.Y {
+	color: yellow;
+}
 #allmap {
 	height: 200px;
 }
