@@ -2,10 +2,18 @@
 
 class Login extends CI_Controller {
 
+	/**
+	 * 构造函数
+	 *
+	 * 
+	 */	
+	function __construct()
+    {
+        parent::__construct();
+    }
+
 	public function index()
 	{
-		
-		$this->load->library('session');
 		$this->load->helper('url');
 		$this->load->view('login');
 	}
