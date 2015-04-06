@@ -17,6 +17,24 @@ class Homepage extends CI_Controller
 		$this->load->view('homepage');
 	}
 
+	public function editIntroduce()
+	{
+		if (!session_id()) session_start();
+
+		$submitInfo = array($this->input->post('introduce1'), 
+			           		$this->input->post('introduce1'),
+			           		$this->input->post('introduce1'),
+			           		$this->input->post('introduce1'),
+			           		$this->input->post('introduce1'));
+
+	    $this->load->model('homeModel');
+
+	    var_dump($submitInfo);
+	    
+	    for ($i=0; $i < 5; $i++) { 
+	    	
+	    }
+	}
 }
 
 ?>

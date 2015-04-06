@@ -65,19 +65,22 @@
             <li><a href="#">客户评价</a></li>
           </ul>
         </div>
-        <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/edit')?>">
+        
           <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <h1 class="page-header">Dashboard</h1>
-              <input name="original" type="text" class="form-control" placeholder="Original Box">
-              <input name="strategy" type="text" class="form-control" placeholder="Strategy Box">
-              <input name="thebox" type="text" class="form-control" placeholder="Out of the Box">
             <h2 class="sub-header">介绍</h2>
-            <div>
-              <input name="introduce1" type="text" class="form-control" placeholder="introduce">
-              <input name="introduce2" type="text" class="form-control" placeholder="introduce">
-              <input name="introduce3" type="text" class="form-control" placeholder="introduce">
-              <input name="introduce4" type="text" class="form-control" placeholder="introduce">
-            </div>
+            <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editIntroduce')?>">
+              <div>
+                <input name="introduce1" type="text" class="form-control" placeholder="introduce">
+                <input name="introduce2" type="text" class="form-control" placeholder="introduce">
+                <input name="introduce3" type="text" class="form-control" placeholder="introduce">
+                <input name="introduce4" type="text" class="form-control" placeholder="introduce">
+              </div>
+              <div class="col-md-3 col-md-offset-6">
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+              </div>
+          
+             </form>
             <h2 class="sub-header">项目</h2>
             <div >
               <input name="project1" type="text" class="form-control" placeholder="project">
@@ -95,11 +98,6 @@
               <input name="evaluation5" type="text" class="form-control" placeholder="evaluation">
             </div>
           </div>
-          <div class="col-md-3 col-md-offset-6">
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
-          </div>
-          
-        </form>
       </div>
     </div>
 
