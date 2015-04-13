@@ -30,7 +30,7 @@ class Homepage extends CI_Controller
 
 	    for ($i=0; $i < 5; $i++) { 
 	    	if ($submitInfo[$i]) {
-	    		$this->homeModel->editIntroduce($submitInfo, $i);
+	    		$this->homeModel->editIntroduce($submitInfo[$i], $i);
 	    	}
 	    }
 
@@ -49,7 +49,7 @@ class Homepage extends CI_Controller
 
 	    for ($i=0; $i < 5; $i++) { 
 	    	if ($submitInfo[$i]) {
-	    		$this->homeModel->editProject($submitInfo, $i);
+	    		$this->homeModel->editProject($submitInfo[$i], $i);
 	    	}
 	    }
 
@@ -68,7 +68,7 @@ class Homepage extends CI_Controller
 
 	    for ($i=0; $i < 5; $i++) { 
 	    	if ($submitInfo[$i]) {
-	    		$this->homeModel->editEvaluation($submitInfo, $i);
+	    		$this->homeModel->editEvaluation($submitInfo[$i], $i);
 	    	}
 	    }
 
