@@ -82,21 +82,33 @@
           
              </form>
             <h2 class="sub-header">项目</h2>
-            <div >
-              <input name="project1" type="text" class="form-control" placeholder="project">
-              <input name="project2" type="text" class="form-control" placeholder="project">
-              <input name="project3" type="text" class="form-control" placeholder="project">
-              <input name="project4" type="text" class="form-control" placeholder="project">
-              <input name="project5" type="text" class="form-control" placeholder="project">
-            </div>
+            <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editProject')?>">
+              <div >
+                <input name="project1" type="text" class="form-control" placeholder="project">
+                <input name="project2" type="text" class="form-control" placeholder="project">
+                <input name="project3" type="text" class="form-control" placeholder="project">
+                <input name="project4" type="text" class="form-control" placeholder="project">
+                <input name="project5" type="text" class="form-control" placeholder="project">
+              </div>
+              <div class="col-md-3 col-md-offset-6">
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+              </div>
+          
+             </form>
             <h2 class="sub-header">客户评价</h2>
-            <div>
-              <input name="evaluation1" type="text" class="form-control" placeholder="evaluation">
-              <input name="evaluation2" type="text" class="form-control" placeholder="evaluation">
-              <input name="evaluation3" type="text" class="form-control" placeholder="evaluation">
-              <input name="evaluation4" type="text" class="form-control" placeholder="evaluation">
-              <input name="evaluation5" type="text" class="form-control" placeholder="evaluation">
-            </div>
+            <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editEvaluation')?>">
+              <div>
+                <input name="evaluation1" type="text" class="form-control" placeholder="evaluation">
+                <input name="evaluation2" type="text" class="form-control" placeholder="evaluation">
+                <input name="evaluation3" type="text" class="form-control" placeholder="evaluation">
+                <input name="evaluation4" type="text" class="form-control" placeholder="evaluation">
+                <input name="evaluation5" type="text" class="form-control" placeholder="evaluation">
+              </div>
+              <div class="col-md-3 col-md-offset-6">
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+              </div>
+          
+            </form>
           </div>
       </div>
     </div>
