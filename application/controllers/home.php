@@ -20,6 +20,17 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		$this->load->helper('url');
-		$this->load->view('home');
+		$this->load->view('home', $this->getAllData());
+	}
+
+
+	public function getAllData()
+	{
+		$this->load->model('indexModel');
+		$data['introduce'] = $this->homeModel->getIntroduceData();
+		$data['project'] = $this->homeModel->getProjectData();
+		$data['evaluation'] = $this->homeModel->getEvaluationData();
+
+		return $data;
 	}
 }
