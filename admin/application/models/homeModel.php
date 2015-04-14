@@ -34,21 +34,21 @@ class HomeModel extends CI_Model
     {
         $this->db->select('content, position');
         $query = $this->db->get('introduce');
-        return $query->row_array();
+        return $query->result_array();
     }
 
     public function getProjectData()
     {
         $this->db->select('content, position');
         $query = $this->db->get('project');
-        return $query->row_array();
+        return $query->result_array();
     }
 
     public function getEvaluationData()
     {
         $this->db->select('content, position');
         $query = $this->db->get('evaluation');
-        return $query->row_array();
+        return $query->result_array();
     }
 }
 

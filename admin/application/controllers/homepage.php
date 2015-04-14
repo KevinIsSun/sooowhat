@@ -28,10 +28,10 @@ class Homepage extends CI_Controller
 
 	    $this->load->model('homeModel');
 
-	    for ($i=0; $i < 5; $i++) { 
-	    	if ($submitInfo[$i]) {
-	    		$this->homeModel->editIntroduce($submitInfo[$i], $i);
-	    	}
+	    var_dump($submitInfo);
+	    
+	    for ($i=0; $i < 4; $i++) { 
+	    	$this->homeModel->editIntroduce($submitInfo[$i], $i);
 	    }
 
 	    $this->load->view('homepage', $this->getAllData());

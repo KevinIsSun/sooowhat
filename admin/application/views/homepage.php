@@ -71,10 +71,10 @@
             <h2 class="sub-header">介绍</h2>
             <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editIntroduce')?>">
               <div>
-                <input name="introduce1" type="text" class="form-control" placeholder="introduce">
-                <input name="introduce2" type="text" class="form-control" placeholder="introduce">
-                <input name="introduce3" type="text" class="form-control" placeholder="introduce">
-                <input name="introduce4" type="text" class="form-control" placeholder="introduce">
+                <input name="introduce1" type="text" class="form-control" value="<?php echo $introduce[0]['content'] ?>">
+                <input name="introduce2" type="text" class="form-control" value="<?php echo $introduce[1]['content'] ?>">
+                <input name="introduce3" type="text" class="form-control" value="<?php echo $introduce[2]['content'] ?>">
+                <input name="introduce4" type="text" class="form-control" value="<?php echo $introduce[3]['content'] ?>">
               </div>
               <div class="col-md-3 col-md-offset-6">
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
@@ -84,11 +84,11 @@
             <h2 class="sub-header">项目</h2>
             <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editProject')?>">
               <div >
-                <input name="project1" type="text" class="form-control" placeholder="project">
-                <input name="project2" type="text" class="form-control" placeholder="project">
-                <input name="project3" type="text" class="form-control" placeholder="project">
-                <input name="project4" type="text" class="form-control" placeholder="project">
-                <input name="project5" type="text" class="form-control" placeholder="project">
+                <input name="project1" type="text" class="form-control" value="<?php echo $project[0]['content'] ?>">
+                <input name="project2" type="text" class="form-control" value="<?php echo $project[1]['content'] ?>">
+                <input name="project3" type="text" class="form-control" value="<?php echo $project[2]['content'] ?>">
+                <input name="project4" type="text" class="form-control" value="<?php echo $project[3]['content'] ?>">
+                <input name="project5" type="text" class="form-control" value="<?php echo $project[4]['content'] ?>">
               </div>
               <div class="col-md-3 col-md-offset-6">
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
@@ -98,11 +98,11 @@
             <h2 class="sub-header">客户评价</h2>
             <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editEvaluation')?>">
               <div>
-                <input name="evaluation1" type="text" class="form-control" placeholder="evaluation">
-                <input name="evaluation2" type="text" class="form-control" placeholder="evaluation">
-                <input name="evaluation3" type="text" class="form-control" placeholder="evaluation">
-                <input name="evaluation4" type="text" class="form-control" placeholder="evaluation">
-                <input name="evaluation5" type="text" class="form-control" placeholder="evaluation">
+                <input name="evaluation1" type="text" class="form-control" value="<?php echo $evaluation[0]['content'] ?>">
+                <input name="evaluation2" type="text" class="form-control" value="<?php echo $evaluation[1]['content'] ?>">
+                <input name="evaluation3" type="text" class="form-control" value="<?php echo $evaluation[2]['content'] ?>">
+                <input name="evaluation4" type="text" class="form-control" value="<?php echo $evaluation[3]['content'] ?>">
+                <input name="evaluation5" type="text" class="form-control" value="<?php echo $evaluation[4]['content'] ?>">
               </div>
               <div class="col-md-3 col-md-offset-6">
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
