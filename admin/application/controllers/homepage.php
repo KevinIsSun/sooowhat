@@ -29,7 +29,7 @@ class Homepage extends CI_Controller
 	    $this->load->model('homeModel');
 
 	    var_dump($submitInfo);
-	    
+
 	    for ($i=0; $i < 4; $i++) { 
 	    	$this->homeModel->editIntroduce($submitInfo[$i], $i);
 	    }
@@ -48,9 +48,7 @@ class Homepage extends CI_Controller
 	    $this->load->model('homeModel');
 
 	    for ($i=0; $i < 5; $i++) { 
-	    	if ($submitInfo[$i]) {
 	    		$this->homeModel->editProject($submitInfo[$i], $i);
-	    	}
 	    }
 
 	    $this->load->view('homepage', $this->getAllData());
@@ -67,9 +65,7 @@ class Homepage extends CI_Controller
 	    $this->load->model('homeModel');
 
 	    for ($i=0; $i < 5; $i++) { 
-	    	if ($submitInfo[$i]) {
-	    		$this->homeModel->editEvaluation($submitInfo[$i], $i);
-	    	}
+	    	$this->homeModel->editEvaluation($submitInfo[$i], $i);
 	    }
 
 	    $this->load->view('homepage', $this->getAllData());
