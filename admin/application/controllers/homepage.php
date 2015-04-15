@@ -23,15 +23,12 @@ class Homepage extends CI_Controller
 		$submitInfo = array($this->input->post('introduce1'), 
 			           		$this->input->post('introduce2'),
 			           		$this->input->post('introduce3'),
-			           		$this->input->post('introduce4'),
-			           		$this->input->post('introduce5'));
+			           		$this->input->post('introduce4'));
 
 	    $this->load->model('homeModel');
 
-	    var_dump($submitInfo);
-
 	    for ($i=0; $i < 4; $i++) { 
-	    	$this->homeModel->editIntroduce($submitInfo[$i], $i);
+	    	$this->homeModel->editIntroduce($submitInfo[$i], $i+1);
 	    }
 
 	    $this->load->view('homepage', $this->getAllData());
@@ -48,7 +45,7 @@ class Homepage extends CI_Controller
 	    $this->load->model('homeModel');
 
 	    for ($i=0; $i < 5; $i++) { 
-	    		$this->homeModel->editProject($submitInfo[$i], $i);
+	    	$this->homeModel->editProject($submitInfo[$i], $i+1);
 	    }
 
 	    $this->load->view('homepage', $this->getAllData());
@@ -65,7 +62,7 @@ class Homepage extends CI_Controller
 	    $this->load->model('homeModel');
 
 	    for ($i=0; $i < 5; $i++) { 
-	    	$this->homeModel->editEvaluation($submitInfo[$i], $i);
+	    	$this->homeModel->editEvaluation($submitInfo[$i], $i+1);
 	    }
 
 	    $this->load->view('homepage', $this->getAllData());
