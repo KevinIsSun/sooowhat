@@ -193,21 +193,17 @@
 				<div class="row text-center">
 					<div class="col-sm-12">
 						<h2>Introduction</h2>
-						<h5>Explanation</h5>
+						<h5><?php echo $introduce[0]['content']?></h5>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-6">
-						<p>Explanation<br>
-						<br>
-						Explanation</p>
-					</div>
-					<div class="col-sm-6">
-						<p>Explanation</p>
-					</div>
-						<div class="col-sm-6">
-						<p>Explanation</p>
-					</div>
+					<?php foreach ($introduce as $k => $v) { ?>
+						<?php if($k > 0) { ?>
+							<div class="col-sm-6">
+								<?php echo $introduce[$k]['content']?>
+							</div>
+						<?php } ?>
+					<?php } ?>
 				</div>
 				<div class="row text-center">
 					<div class="col-sm-12">
@@ -230,76 +226,23 @@
 						<h5> </h5>
 						<!-- Tabs Start -->
 						<ul class="nav nav-tabs text-center">
-							<li class="active"><a href="#Learn" data-toggle="tab">Project</a></li>
-							<li><a href="#Play" data-toggle="tab">Project 1</a></li>
-							<li><a href="#Painting" data-toggle="tab">Project 2</a></li>
-							<li><a href="#Music" data-toggle="tab">Project 3</a></li>
-							<li><a href="#Sport" data-toggle="tab">Project 4</a></li>
+						<?php foreach($project as $k => $v) { ?>
+						<li <?php echo ($k==1)?'class="in active"':'';?>><a href="#project<?php echo $k+1;?>" data-toggle="tab">Project<?php echo $k+1;?></a></li>
+						<?php } ?>
 						</ul>
-
 						<div class="tab-content">
-							<div class="tab-pane fade in active" id="Learn">
+						<?php foreach($project as $k => $v) { ?>
+							<div class="tab-pane fade <?php echo ($k==1)?'in active':'';?>" id="project<?php echo $k+1;?>">
 								<div class="col-sm-4">
-									<p><img src="images/mentor.jpg" alt="" class="img-responsive" /></p>
+									<p><img src="images/<?php echo 'project'.($k+1);?>.png" alt="" class="img-responsive" /></p>
 								</div>
 								<div class="col-sm-8">
 									<br>
+									<p><?php echo $project[$k]['content']?></p>
+								</div>
+							</div>
+						<?php } ?>
 
-									<p>Explanation</p>
-									<p>Explanation</p>
-									<p>Explanation</p>
-									<p>Explanation</p>
-
-								</div>
-							</div>
-							<div class="tab-pane fade" id="Play">
-								<div class="col-sm-4">
-									<p><img src="images/committee.png" alt="" class="img-responsive" /></p>
-								</div>
-								<div class="col-sm-8">
-									<br>
-									<p>Explanation</p>
-									<p>Explanation</p>
-									<p>Explanation</p>
-									<p>Explanation</p>
-								</div>
-							</div>
-							<div class="tab-pane fade" id="Painting">
-								<div class="col-sm-4">
-									<p><img src="images/test.jpg" alt="" class="img-responsive" /></p>
-								</div>
-								<div class="col-sm-8">
-									<br>
-									<p>Explanation</p>
-									<p>Explanation</p>
-									<p>Explanation</p>
-									<p>Explanation</p>
-								</div>
-							</div>
-							<div class="tab-pane fade" id="Music">
-								<div class="col-sm-4">
-									<p><img src="images/prof.jpg" alt="" class="img-responsive" /></p>
-								</div>
-								<div class="col-sm-8">
-									<br>
-									<p>Explanation</p>
-									<p>Explanation</p>
-									<p>Explanation</p>
-									<p>Explanation</p>
-								</div>
-							</div>
-							<div class="tab-pane fade" id="Sport">
-								<div class="col-sm-4">
-									<p><img src="images/lib.png" alt="" class="img-responsive" /></p>
-								</div>
-								<div class="col-sm-8">
-									<br>
-									<p>Explanation</p>
-									<p>Explanation</p>
-									<p>Explanation</p>
-									<p>Explanation</p>
-								</div>
-							</div>
 						</div>
 						<!-- Tabs End -->
 
