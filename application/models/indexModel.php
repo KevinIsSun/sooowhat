@@ -32,6 +32,14 @@ class IndexModel extends CI_Model
         $query = $this->db->get('evaluation');
         return $query->result_array();
     }
+
+    public function getTeamData()
+    {
+        $this->db->select('content, position');
+        $query = $this->db->get('team');
+        return $query->result_array();
+    }
+    
 }
 
 ?>

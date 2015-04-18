@@ -31,6 +31,8 @@ class Home extends CI_Controller {
 		$data['introduce'] = $this->indexModel->getIntroduceData();
 		$data['project'] = $this->indexModel->getProjectData();
 		$data['evaluation'] = $this->indexModel->getEvaluationData();
+		$data['team'] = $this->indexModel->getTeamData();
+		
 		return $data;
 	}
 }

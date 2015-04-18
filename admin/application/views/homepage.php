@@ -127,6 +127,22 @@
         </div>
       </form>
     </div>
+    <div id="team" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <h2 class="sub-header">团队介绍</h2>
+      <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editTeam')?>
+        ">
+        <div class="clearfix">
+          <?php foreach($team as $k => $v) { ?>
+          <div class="textarea" style="font-size:20px;">客户评价<?php echo $k+1;?>
+          <textarea name="team<?php echo $k+1;?>" type="text" class="form-control"><?php echo $team[$k]['content']; ?></textarea>
+          </div><?php } ?>
+        </div>
+        <br/>
+        <div style="float:none;margin-left:10px;">
+        <button class="btn btn-lg btn-primary btn-outline" type="submit">Save</button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
 
