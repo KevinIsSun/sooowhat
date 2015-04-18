@@ -28,96 +28,111 @@
     <![endif]-->
   </head>
 
-  <body>
+<body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">后台管理</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview</a></li>
-            <li><a href="#">介绍</a></li>
-            <li><a href="#">项目</a></li>
-            <li><a href="#">客户评价</a></li>
-          </ul>
-        </div>
-        
-          <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h1 class="page-header">Dashboard</h1>
-            <h2 class="sub-header">介绍</h2>
-            <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editIntroduce')?>">
-              <div>
-                <input name="introduce1" type="text" class="form-control" value="<?php echo $introduce[0]['content'] ?>">
-                <input name="introduce2" type="text" class="form-control" value="<?php echo $introduce[1]['content'] ?>">
-                <input name="introduce3" type="text" class="form-control" value="<?php echo $introduce[2]['content'] ?>">
-                <input name="introduce4" type="text" class="form-control" value="<?php echo $introduce[3]['content'] ?>">
-              </div>
-              <div class="col-md-3 col-md-offset-6">
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
-              </div>
-          
-             </form>
-            <h2 class="sub-header">项目</h2>
-            <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editProject')?>">
-              <div >
-                <input name="project1" type="text" class="form-control" value="<?php echo $project[0]['content'] ?>">
-                <input name="project2" type="text" class="form-control" value="<?php echo $project[1]['content'] ?>">
-                <input name="project3" type="text" class="form-control" value="<?php echo $project[2]['content'] ?>">
-                <input name="project4" type="text" class="form-control" value="<?php echo $project[3]['content'] ?>">
-                <input name="project5" type="text" class="form-control" value="<?php echo $project[4]['content'] ?>">
-              </div>
-              <div class="col-md-3 col-md-offset-6">
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
-              </div>
-          
-             </form>
-            <h2 class="sub-header">客户评价</h2>
-            <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editEvaluation')?>">
-              <div>
-                <input name="evaluation1" type="text" class="form-control" value="<?php echo $evaluation[0]['content'] ?>">
-                <input name="evaluation2" type="text" class="form-control" value="<?php echo $evaluation[1]['content'] ?>">
-                <input name="evaluation3" type="text" class="form-control" value="<?php echo $evaluation[2]['content'] ?>">
-                <input name="evaluation4" type="text" class="form-control" value="<?php echo $evaluation[3]['content'] ?>">
-                <input name="evaluation5" type="text" class="form-control" value="<?php echo $evaluation[4]['content'] ?>">
-              </div>
-              <div class="col-md-3 col-md-offset-6">
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
-              </div>
-          
-            </form>
-          </div>
-      </div>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">后台管理</a>
     </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="#">Dashboard</a>
+        </li>
+        <li>
+          <a href="#">Settings</a>
+        </li>
+        <li>
+          <a href="#">Profile</a>
+        </li>
+        <li>
+          <a href="#">Help</a>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <input type="text" class="form-control" placeholder="Search..."></form>
+    </div>
+  </div>
+</nav>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <script src="<?php echo base_url()?>asset/js/bootstrap.min.js"></script>
-    <script src="<?php echo base_url()?>asset/js/docs.min.js"></script>
-  </body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-2 sidebar">
+      <ul class="nav nav-sidebar">
+        <li class="active">
+          <a href="#">Overview</a>
+        </li>
+        <li>
+          <a href="#introduce">介绍</a>
+        </li>
+        <li>
+          <a href="#program">项目</a>
+        </li>
+        <li>
+          <a href="#eveluation">客户评价</a>
+        </li>
+      </ul>
+    </div>
+    <div id="introduce" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <h1 class="page-header">Dashboard</h1>
+      <h2 class="sub-header">介绍</h2>
+      <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editIntroduce')?>
+        ">
+        <div>
+          <?php foreach($evaluation as $k => $v) { ?>
+          <input name="introduce<?php echo $k+1;?>" type="text" class="form-control" value="<?php echo $introduce[$k]['content']; ?>">
+          <?php } ?>
+          <button class="btn btn-lg btn-primary btn-outline" type="submit">Save</button>
+        </div>
+
+      </form>
+    </div>
+    <div id="program" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <h2 class="sub-header">项目</h2>
+      <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editProject')?>
+        ">
+        <div >
+          <input name="project1" type="text" class="form-control" value="<?php echo $project[0]['content'] ?>
+          ">
+          <input name="project2" type="text" class="form-control" value="<?php echo $project[1]['content'] ?>
+          ">
+          <input name="project3" type="text" class="form-control" value="<?php echo $project[2]['content'] ?>
+          ">
+          <input name="project4" type="text" class="form-control" value="<?php echo $project[3]['content'] ?>
+          ">
+          <input name="project5" type="text" class="form-control" value="<?php echo $project[4]['content'] ?>"></div>
+        <div>
+          <button class="btn btn-lg btn-primary btn-outline" type="submit">Save</button>
+        </div>
+      </form>
+    </div>
+    <div id="eveluation" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <h2 class="sub-header">客户评价</h2>
+      <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editEvaluation')?>
+        ">
+        <div>
+          <?php foreach($evaluation as $k => $v) { ?>
+          <textarea name="evaluation<?php echo $k+1;?>" type="text" class="form-control"><?php echo $evaluation[$k]['content']; ?></textarea>
+          <?php } ?>
+          <button class="btn btn-lg btn-primary btn-outline" type="submit">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="<?php echo base_url()?>asset/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url()?>asset/js/docs.min.js"></script>
+</body>
 </html>
