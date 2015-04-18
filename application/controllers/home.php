@@ -27,9 +27,10 @@ class Home extends CI_Controller {
 	public function getAllData()
 	{
 		$this->load->model('indexModel');
-		$data['introduce'] = $this->homeModel->getIntroduceData();
-		$data['project'] = $this->homeModel->getProjectData();
-		$data['evaluation'] = $this->homeModel->getEvaluationData();
+
+		$data['introduce'] = $this->indexModel->getIntroduceData();
+		$data['project'] = $this->indexModel->getProjectData();
+		$data['evaluation'] = $this->indexModel->getEvaluationData();
 
 		return $data;
 	}
