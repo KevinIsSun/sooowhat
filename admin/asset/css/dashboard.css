@@ -78,6 +78,7 @@ body {
   .main {
     padding-right: 40px;
     padding-left: 40px;
+    border: 1px #ccc solid;
   }
 }
 .main .page-header {
@@ -105,4 +106,19 @@ body {
 }
 .form-signin input {
   margin: 10px 0px;
+}
+
+.form-signin textarea.form-control {
+  height: 140px;
+  resize: none;
+}
+.form-signin .textarea {
+  display: inline;
+  float: left;
+  width: 30%;
+  margin: 10px;
+}
+
+.sub-header {
+  margin-top:40px;
 }

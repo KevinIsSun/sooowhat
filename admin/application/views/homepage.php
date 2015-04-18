@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -81,35 +80,34 @@
       </ul>
     </div>
     <div id="introduce" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-      <h1 class="page-header">Dashboard</h1>
       <h2 class="sub-header">介绍</h2>
       <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editIntroduce')?>
         ">
-        <div>
-          <?php foreach($evaluation as $k => $v) { ?>
-          <input name="introduce<?php echo $k+1;?>" type="text" class="form-control" value="<?php echo $introduce[$k]['content']; ?>">
-          <?php } ?>
-          <button class="btn btn-lg btn-primary btn-outline" type="submit">Save</button>
+        <div class="clearfix">
+          <?php foreach($introduce as $k => $v) { ?>
+          <div class="textarea" style="font-size:20px;">介绍<?php echo $k+1;?>
+          <textarea name="introduce<?php echo $k+1;?>" type="text" class="form-control"><?php echo $introduce[$k]['content']; ?></textarea>
+          </div><?php } ?>
         </div>
-
+        <br/>
+        <div style="float:none;margin-left:10px;">
+        <button class="btn btn-lg btn-primary btn-outline" type="submit">Save</button>
+        </div>
       </form>
     </div>
     <div id="program" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
       <h2 class="sub-header">项目</h2>
       <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editProject')?>
         ">
-        <div >
-          <input name="project1" type="text" class="form-control" value="<?php echo $project[0]['content'] ?>
-          ">
-          <input name="project2" type="text" class="form-control" value="<?php echo $project[1]['content'] ?>
-          ">
-          <input name="project3" type="text" class="form-control" value="<?php echo $project[2]['content'] ?>
-          ">
-          <input name="project4" type="text" class="form-control" value="<?php echo $project[3]['content'] ?>
-          ">
-          <input name="project5" type="text" class="form-control" value="<?php echo $project[4]['content'] ?>"></div>
-        <div>
-          <button class="btn btn-lg btn-primary btn-outline" type="submit">Save</button>
+        <div class="clearfix">
+          <?php foreach($project as $k => $v) { ?>
+          <div class="textarea" style="font-size:20px;">项目<?php echo $k+1;?>
+          <textarea name="project<?php echo $k+1;?>" type="text" class="form-control"><?php echo $project[$k]['content']; ?></textarea>
+          </div><?php } ?>
+        </div>
+        <br/>
+        <div style="float:none;margin-left:10px;">
+        <button class="btn btn-lg btn-primary btn-outline" type="submit">Save</button>
         </div>
       </form>
     </div>
@@ -117,11 +115,15 @@
       <h2 class="sub-header">客户评价</h2>
       <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editEvaluation')?>
         ">
-        <div>
+        <div class="clearfix">
           <?php foreach($evaluation as $k => $v) { ?>
+          <div class="textarea" style="font-size:20px;">客户评价<?php echo $k+1;?>
           <textarea name="evaluation<?php echo $k+1;?>" type="text" class="form-control"><?php echo $evaluation[$k]['content']; ?></textarea>
-          <?php } ?>
-          <button class="btn btn-lg btn-primary btn-outline" type="submit">Save</button>
+          </div><?php } ?>
+        </div>
+        <br/>
+        <div style="float:none;margin-left:10px;">
+        <button class="btn btn-lg btn-primary btn-outline" type="submit">Save</button>
         </div>
       </form>
     </div>

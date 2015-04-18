@@ -137,104 +137,49 @@
 						<p>&nbsp;</p>
 					</div>
 				</div>
-				<div class="row-margin owl-carousel">
-					<div>
-						<div class="item">
-							<img src="images/1vs1.jpg" alt="" />
-							<h4>Product Manager</h4>
-							
-							
-						</div>
-					</div>
-					<div>
-						<div class="item">
-							<img src="images/language.jpg" alt="" />
-							<h4>Project Manager</h4>
-							
-							
-						</div>
-					</div>
-					<div>
-						<div class="item">
-							<img src="images/supervisor.jpg" alt="" />
-							<h4>Frontend Engineer</h4>
-							
-							
-						</div>
-					</div>
-					<div>
-						<div class="item">
-							<img src="images/whyessay.jpg" alt="" />
-							<h4>Backend Engineer</h4>
-							
-							
-						</div>
-					</div>
-					<div>
-						<div class="item">
-							<img src="images/ps.jpg" alt="" />
-							<h4>Quality Assurance Engineer</h4>
-							
-							
-						</div>
-					</div>
-					<div>
-						<div class="item">
-							<img src="images/standardtest.jpg" alt="" />
-							<h4>Actuary</h4>
-							
-					<!--		
-						</div>
-					</div>
-					<div>
-						<div class="item">
-							<img src="images/interview.jpg" alt="" />
-							<h4>面试导师</h4>
-							
-							
-						</div>
-					</div>
-					<div>
-						<div class="item">
-							<img src="images/plan.jpg" alt="" />
-							<h4>规划导师</h4>
-							
-							
-						</div>
-					</div>
-					<div>
-						<div class="item">
-							<img src="images/choose.jpg" alt="" />
-							<h4>选校导师 </h4>
-							
-							
-						</div>
-					</div>
-					<div>
-						<div class="item">
-							<img src="images/scholarship.jpg" alt="" />
-							<h4>奖学金导师</h4>
-							
-							
-						</div>
-					</div>
-					<div>
-						<div class="item">
-							<img src="images/area.jpg" alt="" />
-							<h4>区域申请导师</h4>
-							
-							
-						</div>
-					</div>
-					<div>
-						<div class="item">
-							<img src="images/brainstorm.jpg" alt="" />
-							<h4>头脑风暴导师</h4>
-							
-							
-						</div>
-					</div>
-					-->
+		<div class="row-margin owl-carousel">
+			<div>
+				<div class="item">
+					<img src="images/1vs1.jpg" alt="" />
+					<h4>Product Manager</h4>
+					
+					
+				</div>
+			</div>
+			<div>
+				<div class="item">
+					<img src="images/language.jpg" alt="" />
+					<h4>Project Manager</h4>
+				</div>
+			</div>
+			<div>
+				<div class="item">
+					<img src="images/supervisor.jpg" alt="" />
+					<h4>Frontend Engineer</h4>
+					
+					
+				</div>
+			</div>
+			<div>
+				<div class="item">
+					<img src="images/whyessay.jpg" alt="" />
+					<h4>Backend Engineer</h4>
+					
+					
+				</div>
+			</div>
+			<div>
+				<div class="item">
+					<img src="images/ps.jpg" alt="" />
+					<h4>Quality Assurance Engineer</h4>
+					
+					
+				</div>
+			</div>
+			<div>
+				<div class="item">
+					<img src="images/standardtest.jpg" alt="" />
+					<h4>Actuary</h4>
 				</div>
 			</div>
 		</section>
@@ -377,46 +322,11 @@
 				</div>
 				<div class="row text-center">
 					<div class="col-sm-12 owl-carousel">
-						<div>
+						<?php foreach($evaluation as $k => $v) { ?>
 							<div class="item">
-								<blockquote>
-									大部分中介的导师都是国内大学英语专业毕业。他们并没有经历过美国大学申请，更不理解美国人的价值理念。高收费的咨询机构的美籍导师靠谱些。他们的语言功底应该没问题，但一看到他们的客户数量就会怀疑我到底能得到多少关注。在三士渡，我的导师们都是专家；更重要的是，他们都懂我，愿意与我交流。
-									<small>刘同学（成都）（被Yale录取）</small>
-								</blockquote>
+								<blockquote><?php echo $evaluation[$k]['content'];?></blockquote>
 							</div>
-						</div>
-						<div>
-							<div class="item">
-								<blockquote>
-									作为一个顽固的典型的大陆背景高中生，我像许多人一样，满心都是“爬藤”的梦想，我能把US news的前二十排名倒背如流，我甚至经常幻想自己上了常青藤名校之后在人人上佯装淡定地发一条状态然后被各种转载各种cong和膜拜。彼时我对哥大和宾大这两个商业氛围浓郁的大学情有独钟，于是我便兴致勃勃地把我自认为精雕细琢的essay发给我的mentor求修改。然而，他却立刻qq打电话过来，劈头盖脸的就把我的爬藤梦说了一通，并且忽视了我藤校的essay，在否定我的school list的同时，他根据我的essay主题和个人性格（通过聊天他就能准确的判断出来）给了我申请rice, duke等校园氛围美好团结的大学的建议。我心里很不服气，还是满怀信心地递交了我心目中梦想藤校地申请。也许也是因为我自身实力的原因，columbia和upenn都没有录取我，反而是当初他建议的那些无一例外都录取了我。
-									<small>卢同学（北京）（被Duke、Rice等大学录取）</small>
-								</blockquote>
-							</div>
-						</div>
-						<div>
-							<div class="item">
-								<blockquote>
-									我一开始对申请大学毫不在意，学校只要华丽的像霍格沃茨一样并且会下雪就行，那会儿美国大概凌晨四五点，他打来电话严肃认真团结活泼的讲了一个多小时，怎样选学校啊，student body比风景重要的多，还把前10的文理学院都事无巨细的介绍了一遍。我特别能拖，所有essay几乎都是死线前几天一口气写完然后一股脑儿扔给他的，这是一种很不负责任的行为，可他帮我把每一篇都仔仔细细地看完了，熬夜陪我写，帮我改。In fact, 我给他发去的essay他都是在几天之内就看了然后提出好多意见，不管自己有多么忙碌憔悴，我没认真写的他也一眼就能看出来……我的mentor不是在帮我改essay，就是在帮我改essay的路上！
-									<small>宋同学（青岛）（被Berkeley、Carleton等大学录取）</small>
-								</blockquote>
-							</div>
-						</div>
-						<div>
-							<div class="item">
-								<blockquote>
-									我的mentor虽然还是美国某校的在读学生，但他对美国大学有着超出同龄人的理解。在选校上给予了我很多网站上找不到的建议。他亲身走访美国多所高校的经历给予我充分的理由相信他对这些学校的介绍。在申请的最后关头，他更是不顾自己的课业，在skype上耐心地和我修改着文章。除此之外，我的mentor平时也很积极地与我聊天，缓解我在紧张的申请季中的心情。聊人生，聊理想。即使是在申请结束后，也仍然和我保持着联系。总而言之，他是一位真正意义上的良师诤友。
-									<small>王同学（杭州）（被Williams、Chicago等大学录取）</small>
-								</blockquote>
-							</div>
-						</div>
-						<div>
-							<div class="item">
-								<blockquote>
-									直到mentor第一次点评我的essay, 我才对怎样用文书表现自己有了明确的概念。之前数月自己对申请文书的探索，没有之后mentor的悉心指导，是不可能得到升华的。我永远不会忘记，mentor在整夜学术以后仍坚持和我一起讨论我ps的第N稿。那段时间，即使已经进入了申请的最后一个月，即使我的PS被否定back to square one，即使后来题材完全改变的新的文书一直未入佳境，在mentor的指导和鼓励下，我燃起了前所未有的信心和干劲儿。每当我自认为找到感觉并作出一些修改以后，我总是急切想得到mentor的反馈，而mentor也不厌其烦地引导我，启发我。交给卡尔顿的那篇PS我已经记不清一共改了多少稿了，但是我确信的是没有mentor，我是不可能被卡尔顿录取的。每一次讨论文章，就是对我自身的一次更深的挖掘。所以写这篇PS的经历，带给我的不仅是卡尔顿的认可，更是我对自身passion的确定，以及不到最后关头决不放弃的信念。对mentor有说不尽的感激！
-									<small>朱同学（郑州）（被Notre Dame、Carleton等大学录取）</small>
-								</blockquote>
-							</div>
-						</div>
+						<?php } ?>
 					</div>
 				</div>
 				<div class="row text-center">
