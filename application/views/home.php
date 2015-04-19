@@ -63,7 +63,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#home"><img src=<?php echo base_url()."images/logo2.png";?> alt="Welcome to Stoooges." class="img-responsive" /></a>
+					<a class="navbar-brand" href="#home"><img style="height:65px;" src=<?php echo base_url()."images/logo2.png";?> alt="Welcome to Stoooges." class="img-responsive" /></a>
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
