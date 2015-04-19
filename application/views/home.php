@@ -71,11 +71,10 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="#staff">Our Team</a></li>
-								<li><a href="#mission">Introduction</a></li>
-								<li><a href="#activities">Our Project</a></li>
-								<li><a href="#testimonials">Customer Evaluation</a></li>
-								<!-- <li><a href="#gallery">团队成员</a></li> -->
+								<li><a href="#mission">Our Motto</a></li>
+								<li><a href="#activities">Our Work</a></li>
+								<li><a href="#staff">Our People</a></li>
+								<li><a href="#contact">Contact Us</a></li>
 							</ul>
 						</li>
 						<li><a href="#contact">Contact Us</a></li>
