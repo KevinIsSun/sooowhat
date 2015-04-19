@@ -718,7 +718,7 @@ footer li {
 }
 
 /*====================================*/
-@media (max-width: 350px) {
+@media (max-width: 360px) {
 	.navbar-toggle {
 	position: relative;
 	float: right;
