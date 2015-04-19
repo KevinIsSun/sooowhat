@@ -131,9 +131,8 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
 						<h2>Our Team</h2>
-						<h5>Explanation</h5>
-						<p>Explanation<br>
-							Explanation</p>
+						<h5><?php echo $team[0]['content'];?></h5>
+						<p><?php echo $team[1]['content']; ?></p>
 						<p>&nbsp;</p>
 					</div>
 				</div>
@@ -227,12 +226,12 @@
 						<!-- Tabs Start -->
 						<ul class="nav nav-tabs text-center">
 						<?php foreach($project as $k => $v) { ?>
-						<li <?php echo ($k==1)?'class="in active"':'';?>><a href="#project<?php echo $k+1;?>" data-toggle="tab">Project<?php echo $k+1;?></a></li>
+						<li <?php echo ($k==0)?'class="in active"':'';?>><a href="#project<?php echo $k+1;?>" data-toggle="tab"><?php echo $project[$k]['name'];?></a></li>
 						<?php } ?>
 						</ul>
 						<div class="tab-content">
 						<?php foreach($project as $k => $v) { ?>
-							<div class="tab-pane fade <?php echo ($k==1)?'in active':'';?>" id="project<?php echo $k+1;?>">
+							<div class="tab-pane fade <?php echo ($k==0)?'in active':'';?>" id="project<?php echo $k+1;?>">
 								<div class="col-sm-4">
 									<p><img src="images/<?php echo 'project'.($k+1);?>.png" alt="" class="img-responsive" /></p>
 								</div>

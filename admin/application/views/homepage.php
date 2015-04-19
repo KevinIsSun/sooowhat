@@ -65,9 +65,6 @@
   <div class="row">
     <div class="col-sm-3 col-md-2 sidebar">
       <ul class="nav nav-sidebar">
-        <li class="active">
-          <a href="#">Overview</a>
-        </li>
         <li>
           <a href="#introduce">介绍</a>
         </li>
@@ -75,13 +72,16 @@
           <a href="#program">项目</a>
         </li>
         <li>
-          <a href="#eveluation">客户评价</a>
+          <a href="#evaluation">客户评价</a>
+        </li>
+        <li>
+          <a href="#team">团队介绍</a>
         </li>
       </ul>
     </div>
     <div id="introduce" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
       <h2 class="sub-header">介绍</h2>
-      <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editIntroduce')?>
+      <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editIntroduce#introduce')?>
         ">
         <div class="clearfix">
           <?php foreach($introduce as $k => $v) { ?>
@@ -97,11 +97,13 @@
     </div>
     <div id="program" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
       <h2 class="sub-header">项目</h2>
-      <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editProject')?>
+      <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editProject#program')?>
         ">
         <div class="clearfix">
           <?php foreach($project as $k => $v) { ?>
           <div class="textarea" style="font-size:20px;">项目<?php echo $k+1;?>
+          <br />
+          <input name="projectName<?php echo $k+1;?>" type="text" placeholder="项目标题" class="form-control" value="<?php echo $project[$k]['name']; ?>"/>
           <textarea name="project<?php echo $k+1;?>" type="text" class="form-control"><?php echo $project[$k]['content']; ?></textarea>
           </div><?php } ?>
         </div>
@@ -111,9 +113,9 @@
         </div>
       </form>
     </div>
-    <div id="eveluation" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <div id="evaluation" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
       <h2 class="sub-header">客户评价</h2>
-      <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editEvaluation')?>
+      <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editEvaluation#evaluation')?>
         ">
         <div class="clearfix">
           <?php foreach($evaluation as $k => $v) { ?>
@@ -129,11 +131,11 @@
     </div>
     <div id="team" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
       <h2 class="sub-header">团队介绍</h2>
-      <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editTeam')?>
+      <form class="form-signin" role="form" method="post" action="<?php echo site_url('homepage/editTeam#team')?>
         ">
         <div class="clearfix">
           <?php foreach($team as $k => $v) { ?>
-          <div class="textarea" style="font-size:20px;">客户评价<?php echo $k+1;?>
+          <div class="textarea" style="font-size:20px;">团队介绍<?php echo $k+1;?>
           <textarea name="team<?php echo $k+1;?>" type="text" class="form-control"><?php echo $team[$k]['content']; ?></textarea>
           </div><?php } ?>
         </div>

@@ -21,7 +21,7 @@ class IndexModel extends CI_Model
 
     public function getProjectData()
     {
-        $this->db->select('content, position');
+        $this->db->select('content, position,name');
         $query = $this->db->get('project');
         return $query->result_array();
     }
