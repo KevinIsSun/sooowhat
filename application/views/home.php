@@ -38,9 +38,9 @@
 
 		<div id="slides">
 			<div class="slides-container">
-				<img src=<?php echo base_url()."images/banner7.jpg";?> alt="" />
-				<img src=<?php echo base_url()."images/banner8.jpg";?>  alt="" />
-				<img src=<?php echo base_url()."images/banner9.jpg";?>  alt="" />
+				<img src=<?php echo base_url()."images/banner1.jpg";?> alt="" />
+				<img src=<?php echo base_url()."images/banner2.jpg";?>  alt="" />
+				<img src=<?php echo base_url()."images/banner3.jpg";?>  alt="" />
 			</div>
 			<div class="tint">
 				<div class="welcome text-center">
@@ -125,62 +125,7 @@
 
 		<!-- ========== MENTOR START ========== -->
 
-		<section id="staff">
-			<div class="container text-center">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<h2>Our Team</h2>
-						<h5><?php echo $team[0]['content'];?></h5>
-						<p><?php echo $team[1]['content']; ?></p>
-						<p>&nbsp;</p>
-					</div>
-				</div>
-		<div class="row-margin owl-carousel">
-			<div>
-				<div class="item">
-					<img src="images/1vs1.jpg" alt="" />
-					<h4>Product Manager</h4>
-					
-					
-				</div>
-			</div>
-			<div>
-				<div class="item">
-					<img src="images/language.jpg" alt="" />
-					<h4>Project Manager</h4>
-				</div>
-			</div>
-			<div>
-				<div class="item">
-					<img src="images/supervisor.jpg" alt="" />
-					<h4>Frontend Engineer</h4>
-					
-					
-				</div>
-			</div>
-			<div>
-				<div class="item">
-					<img src="images/whyessay.jpg" alt="" />
-					<h4>Backend Engineer</h4>
-					
-					
-				</div>
-			</div>
-			<div>
-				<div class="item">
-					<img src="images/ps.jpg" alt="" />
-					<h4>Quality Assurance Engineer</h4>
-					
-					
-				</div>
-			</div>
-			<div>
-				<div class="item">
-					<img src="images/standardtest.jpg" alt="" />
-					<h4>Actuary</h4>
-				</div>
-			</div>
-		</section>
+
 
 		<!-- ========== MENTOR END ========== -->
 
@@ -213,9 +158,96 @@
 		</section>
 
 		<!-- ========== MISSION END ========== -->
+		<section id="staff">
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<h2>Our Team</h2>
+						<h5>
+							<?php echo $team[0]['content'];?></h5>
+						<p>
+							<?php echo $team[1]['content']; ?></p>	
+					</div>
+				</div>
+				<div class="row">
+					<img style="width:60%;height:60%;" src=<?php echo base_url()."images/teamCircle.png";?>  alt="" />
+				</div>
+				<div class="row-margin owl-carousel">
+					<div>
+						<div class="item">
+							<img src="images/team1.jpg" alt="" />		
+							<h4>Product Manager</h4>
 
+						</div>
+					</div>
+					<div>
+						<div class="item">
+							<img src="images/team2.jpg" alt="" />		
+							<h4>Project Manager</h4>
+						</div>
+					</div>
+					<div>
+						<div class="item">
+							<img src="images/team3.jpg" alt="" />		
+							<h4>Frontend Engineer</h4>
+
+						</div>
+					</div>
+					<div>
+						<div class="item">
+							<img src="images/team4.jpg" alt="" />		
+							<h4>Backend Engineer</h4>
+
+						</div>
+					</div>
+					<div>
+						<div class="item">
+							<img src="images/team5.jpg" alt="" />		
+							<h4>Quality Assurance Engineer</h4>
+
+						</div>
+					</div>
+					<div>
+						<div class="item">
+							<img src="images/team6.jpg" alt="" />		
+							<h4>Actuary</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- ========== ACTIVITIES START ========== -->
 
+
+		<!-- ========== TESTIMONIALS START ========== -->
+
+		<section class="background background3 background-image" id="testimonials">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-sm-12">
+						<h2>Customer Evaluation</h2>
+						<h5></h5>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-sm-12 owl-carousel">
+						<?php foreach($evaluation as $k => $v) { ?>
+							<div class="item">
+								<blockquote><?php echo $evaluation[$k]['content'];?></blockquote>
+							</div>
+						<?php } ?>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-sm-12">
+						<p>&nbsp;</p>
+						<p><a href="#contact" class="btn btn-lg btn-transparent">Contact Us</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== TESTIMONIALS END ========== -->
 		<section id="activities">
 			<div class="container">
 				<div class="row">
@@ -251,39 +283,8 @@
 
 		<!-- ========== ACTIVITIES END ========== -->
 
-		<!-- ========== TESTIMONIALS START ========== -->
-
-		<section class="background background2 background-image" id="testimonials">
-			<div class="container">
-				<div class="row text-center">
-					<div class="col-sm-12">
-						<h2>Customer Evaluation</h2>
-						<h5></h5>
-					</div>
-				</div>
-				<div class="row text-center">
-					<div class="col-sm-12 owl-carousel">
-						<?php foreach($evaluation as $k => $v) { ?>
-							<div class="item">
-								<blockquote><?php echo $evaluation[$k]['content'];?></blockquote>
-							</div>
-						<?php } ?>
-					</div>
-				</div>
-				<div class="row text-center">
-					<div class="col-sm-12">
-						<p>&nbsp;</p>
-						<p><a href="#contact" class="btn btn-lg btn-transparent">Contact Us</a></p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- ========== TESTIMONIALS END ========== -->
-
 		<!-- ========== CONTACT START ========== -->
-
-		<section id="contact">
+		<section class="background background2 background-image" id="contact">
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-sm-12">
@@ -296,14 +297,16 @@
 						<img height="200px" src="images/contact.png" alt="扫描二维码联系我们">
 					</div>
 					<div class="col-sm-3">
-						<div class="mail-title">Email</div>
+						<div class="mail-title">Telephone</div>
 						<div class="mail-content">
 							<a href="mailto:zhangyuhang@sjtu.edu.cn">
-								zhangyuhang@sjtu.edu.cn
+								(8621) 5459 1887
+
 							</a>
 						</div>
 						<div class="address">Address</div>
-						<div>800 Dong Chuan Road,Shanghai, 200240, China</div>
+						<div>Unit 203, Block 16, Lane 118, Rui Jing 1sr Road, Huangpu District, Shanghai, PRC, 200020
+</div>
 					</div>
 					<div class="col-sm-6">
 						<div id="allmap"></div>
@@ -318,105 +321,13 @@
 
 		<!-- ========== MAP START ========== -->
 
-		<!-- Google Map Script -->
-		<!--
-		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoRMxiPsqJ9SUuaK1KsCAjd3gqnecjlBw&amp;sensor=false"></script>
-		<script type="text/javascript">
-
-			function initialize() {
-
-				// Create an array of styles.
-				var styles = [
-					{
-						stylers: [
-							{ hue: "#e75d5d" },
-							{ saturation: 0 }
-						]
-					},{
-						featureType: "road",
-						elementType: "geometry",
-						stylers: [
-							{ lightness: 100 },
-							{ visibility: "simplified" }
-						]
-					},{
-						featureType: "road",
-						elementType: "labels",
-						stylers: [
-							{ visibility: "off" }
-						]
-					}
-				];
-
-				// Create a new StyledMapType object, passing it the array of styles,
-				// as well as the name to be displayed on the map type control.
-				var styledMap = new google.maps.StyledMapType(styles,
-				{name: "Styled Map"});
-
-
-							var mapOptions = {
-								zoom: 4,
-								center: new google.maps.LatLng(34.926049, 104.355838),
-				mapTypeControlOptions: {
-				  mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
-				}
-				}
-				var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-				//Associate the styled map with the MapTypeId and set it to display.
-				map.mapTypes.set('map_style', styledMap);
-				map.setMapTypeId('map_style');
-
-				setMarkers(map, places);
-			}
-
-			var places = [
-				['Beijing', 39.977576, 116.306392, 1],
-				['Zhengzhou', 34.820609, 113.650822, 1]
-			];
-
-			function setMarkers(map, locations) {
-				// Add markers to the map
-				var image = {
-					url: 'images/marker.png',
-					// This marker is 40 pixels wide by 42 pixels tall.
-					size: new google.maps.Size(40, 42),
-					// The origin for this image is 0,0.
-					origin: new google.maps.Point(0,0),
-					// The anchor for this image is the base of the pin at 20,42.
-					anchor: new google.maps.Point(15, 42)
-				};
-
-				for (var i = 0; i < locations.length; i++) {
-					var place = locations[i];
-					var myLatLng = new google.maps.LatLng(place[1], place[2]);
-					var marker = new google.maps.Marker({
-						position: myLatLng,
-						map: map,
-						icon: image,
-						title: place[0],
-						zIndex: place[3],
-						animation: google.maps.Animation.DROP
-					});
-
-					var contentString = "Some content";
-					google.maps.event.addListener(marker, "click", function() {
-						infowindow.setContent(this.html);
-						infowindow.open(map, this);
-					});
-				}
-			}
-
-			google.maps.event.addDomListener(window, 'load', initialize);
-		</script>
-		-->
 		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=4ce275c31467dd57f3c32f2b79121f25"></script>
 		<script type="text/javascript">
 			// 百度地图API功能
 			var map = new BMap.Map("allmap");    // 创建Map实例
-			map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+			map.centerAndZoom(new BMap.Point(121.4693, 31.2259), 18);  // 初始化地图,设置中心点坐标和地图级别
 			map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
-			map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+			map.setCurrentCity("上海");          // 设置地图显示的城市 此项是必须设置的
 			map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
 		</script>
 
