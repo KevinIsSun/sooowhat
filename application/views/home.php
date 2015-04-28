@@ -44,8 +44,8 @@
 			</div>
 			<div class="tint">
 				<div class="welcome text-center">
-					<h1>Welcome to Sooowhat</h1>
-					<h1>You chooose us because we care.</h1>
+					<!-- <h1>You chooose us because we care.</h1>
+					<h1>Welcome to Sooowhat</h1> -->
 					<i class="fa fa-angle-down"></i>
 				</div>
 			</div>
@@ -72,8 +72,9 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a href="#mission">Our Motto</a></li>
-								<li><a href="#activities">Our Work</a></li>
 								<li><a href="#staff">Our People</a></li>
+								<li><a href="#activities">Our Work</a></li>
+								<li><a href="#testimonials">Our Expertise</a></li>
 								<li><a href="#contact">Contact Us</a></li>
 							</ul>
 						</li>
@@ -162,7 +163,7 @@
 			<div class="container text-center">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
-						<h2>Our Team</h2>
+						<h2>Our People</h2>
 						<h5>
 							<?php echo $team[0]['content'];?></h5>
 						<p>
@@ -225,7 +226,7 @@
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-sm-12">
-						<h2>Customer Evaluation</h2>
+						<h2>Our Expertise</h2>
 						<h5></h5>
 					</div>
 				</div>
@@ -252,7 +253,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<h2 class="text-center">Our Project</h2>
+						<h2 class="text-center">Our Work</h2>
 						<h5> </h5>
 						<!-- Tabs Start -->
 						<ul class="nav nav-tabs text-center">
@@ -341,7 +342,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4 col-sm-offset-3 text-center ">
-						<p>&copy; Copyright 2015 Sooowhat<br>
+						<p>&copy; Copyright 2015 Sooowhat 沪ICP备15018019号-1<br>
 						151-2103-6028, QQ:  227-606-9174,  info@sooowhat.com<br>
 						Web Development by <a>Zhendong Sun </a>&<a> Yuhang Zhang</a></p>
 						
