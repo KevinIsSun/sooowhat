@@ -73,8 +73,8 @@
 							<ul class="dropdown-menu">
 								<li><a href="#mission">Our Motto</a></li>
 								<li><a href="#staff">Our People</a></li>
-<!--								<li><a href="#activities">Our Work</a></li>-->
-								<li><a href="#testimonials">Our Expertise</a></li>
+								<li><a href="#activities">Our Expertise</a></li>
+								<!-- <li><a href="#testimonials">Our Expertise</a></li> -->
 								<li><a href="#contact">Contact Us</a></li>
 							</ul>
 						</li>
@@ -93,7 +93,7 @@
 				<div class="row no-fade">
 					<div class="col-sm-4">
 						<div class="box background background1">
-							<h3>Original</h3>
+							<h3>Ofresh and alternate thinking.  having a unique and yet practical angle for real life application</h3>
 						</div>
 						<div class="icon img-circle">
 							<img src=<?php echo base_url()."images/circle1.png";?> alt="" />
@@ -102,7 +102,7 @@
 					</div>
 					<div class="col-sm-4">
 						<div class="box background background2">
-							<h3>Out of the box</h3>
+							<h3>not bound by but challenging the status quo, bringing inspirations to the thought process</h3>
 						</div>
 						<div class="icon img-circle">
 							<img src=<?php echo base_url()."images/circle2.png";?> alt="" />
@@ -111,7 +111,7 @@
 					</div>
 					<div class="col-sm-4">
 						<div class="box background background3">
-							<h3>On Strategy</h3>
+							<h3>recommendations are always aligned with brand strategy, aiming at driving brand growth</h3>
 						</div>
 						<div class="icon img-circle">
 							<img src=<?php echo base_url()."images/circle3.png";?> alt="" />
@@ -222,7 +222,7 @@
 
 		<!-- ========== TESTIMONIALS START ========== -->
 
-		<section class="background background3 background-image" id="testimonials">
+		<!-- <section class="background background3 background-image" id="testimonials">
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-sm-12">
@@ -246,17 +246,17 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<!-- ========== TESTIMONIALS END ========== -->
-<!--		<section id="activities">
+		<section id="activities">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<h2 class="text-center">Our Work</h2>
+						<h2 class="text-center">Our Expertise</h2>
 						<h5> </h5>
 						<!-- Tabs Start -->
-<!--						<ul class="nav nav-tabs text-center">
+						<ul class="nav nav-tabs text-center">
 						<?php foreach($project as $k => $v) { ?>
 						<li <?php echo ($k==0)?'class="in active"':'';?>><a href="#project<?php echo $k+1;?>" data-toggle="tab"><?php echo $project[$k]['name'];?></a></li>
 						<?php } ?>
@@ -274,13 +274,13 @@
 							</div>
 						<?php } ?>
 
-						</div>-->
+						</div>
 						<!-- Tabs End -->
 
-<!--					</div>
+					</div>
 				</div>
 			</div>
-		</section>-->
+		</section>
 
 		<!-- ========== ACTIVITIES END ========== -->
 
