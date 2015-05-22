@@ -176,42 +176,36 @@
 				<div class="row-margin owl-carousel">
 					<div>
 						<div class="item">
-							<img src="images/team1.jpg" alt="" />		
-							<h4>Product Manager</h4>
+							<img src="images/team1.jpg" alt="" />
 
 						</div>
 					</div>
 					<div>
 						<div class="item">
-							<img src="images/team2.jpg" alt="" />		
-							<h4>Project Manager</h4>
+							<img src="images/team2.jpg" alt="" />	
 						</div>
 					</div>
 					<div>
 						<div class="item">
-							<img src="images/team3.jpg" alt="" />		
-							<h4>Frontend Engineer</h4>
+							<img src="images/team3.jpg" alt="" />	
 
 						</div>
 					</div>
 					<div>
 						<div class="item">
-							<img src="images/team4.jpg" alt="" />		
-							<h4>Backend Engineer</h4>
+							<img src="images/team4.jpg" alt="" />	
 
 						</div>
 					</div>
 					<div>
 						<div class="item">
-							<img src="images/team5.jpg" alt="" />		
-							<h4>Quality Assurance Engineer</h4>
+							<img src="images/team5.jpg" alt="" />	
 
 						</div>
 					</div>
 					<div>
 						<div class="item">
-							<img src="images/team6.jpg" alt="" />		
-							<h4>Actuary</h4>
+							<img src="images/team6.jpg" alt="" />	
 						</div>
 					</div>
 				</div>
