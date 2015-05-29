@@ -310,7 +310,7 @@
 						<?php foreach($project as $k => $v) { ?>
 							<div class="tab-pane fade <?php echo ($k==0)?'in active':'';?>" id="project<?php echo $k+1;?>">
 								<div class="col-sm-4">
-									<p><img src="images/<?php echo 'project'.($k+1);?>.png" alt="" class="img-responsive" /></p>
+									<p><img src="images/<?php echo 'project'.($k+1);?>.jpg" alt="" class="img-responsive" /></p>
 								</div>
 								<div class="col-sm-8">
 									<br>
