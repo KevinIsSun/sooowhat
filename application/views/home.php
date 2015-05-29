@@ -93,7 +93,7 @@
 				<div class="row no-fade">
 					<div class="col-sm-4">
 						<div class="box background background1">
-							<h3>Ofresh and alternate thinking.  having a unique and yet practical angle for real life application</h3>
+							<h3>Fresh and alternate thinking.  having a unique and yet practical angle for real life application</h3>
 						</div>
 						<div class="icon img-circle">
 							<img src=<?php echo base_url()."images/circle1.png";?> alt="" />
@@ -206,6 +206,57 @@
 					<div>
 						<div class="item">
 							<img src="images/team6.jpg" alt="" />	
+						</div>
+					</div>
+					<div>
+						<div class="item">
+							<img src="images/team7.jpg" alt="" />
+
+						</div>
+					</div>
+					<div>
+						<div class="item">
+							<img src="images/team8.jpg" alt="" />	
+						</div>
+					</div>
+					<div>
+						<div class="item">
+							<img src="images/team9.jpg" alt="" />	
+
+						</div>
+					</div>
+					<div>
+						<div class="item">
+							<img src="images/team10.jpg" alt="" />	
+
+						</div>
+					</div>
+					<div>
+						<div class="item">
+							<img src="images/team11.jpg" alt="" />	
+
+						</div>
+					</div>
+					<div>
+						<div class="item">
+							<img src="images/team12.jpg" alt="" />	
+						</div>
+					</div>
+					<div>
+						<div class="item">
+							<img src="images/team13.jpg" alt="" />	
+
+						</div>
+					</div>
+					<div>
+						<div class="item">
+							<img src="images/team14.jpg" alt="" />	
+
+						</div>
+					</div>
+					<div>
+						<div class="item">
+							<img src="images/team15.jpg" alt="" />	
 						</div>
 					</div>
 				</div>
