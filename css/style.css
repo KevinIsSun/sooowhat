@@ -32,18 +32,19 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h2{
-	font-family: "Century Gothic", Arial, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", sans-serif;
+	font-family: "Century Gothic";
 }
 
 h4,h5,h6 {
 	color: #222;
-	font-family: "Century Gothic", Arial, sans-serif;
+	font-family: "Century Gothic";
 	font-weight: bold;
 }
 
 h5,h6 {
 	letter-spacing: 0.1em;
 	margin: 1em 0 3em;
+	text-align:left;
 }
 
 a,
@@ -284,6 +285,7 @@ footer .row {
 	border: 0;
 	margin: 0 50px;
 	padding: 0;
+	text-align:left;
 }
 
 #testimonials blockquote small {
@@ -391,7 +393,7 @@ header h1 {
 
 .entry-title {
 	color: #222;
-	font-family: "Century Gothic", "Open Sans", Arial, sans-serif;
+	font-family: "Century Gothic";
 	font-size: 2em;
 	font-weight: 300;
 	margin-top: 0;
@@ -518,6 +520,9 @@ footer li {
 ==================================================================*/
 
 @media (max-width: 767px) {
+	#mission .row .col-sm-6 {
+		margin: 15px 0px;
+	}
 
 	#rooms .icon img {
 	  margin-top: -15px;
@@ -602,10 +607,9 @@ footer li {
 }
 .mail-title,
 .address {
-	font-size: 28px;
+	font-size: 25px;
 	color: black;
 	font-weight: bold;
-	margin-top: 14px;
 }
 #staff img {
 	width: 180px;
@@ -617,6 +621,10 @@ footer li {
 
 
 @media (max-width: 420px) {
+
+	#mission .row .col-sm-6 {
+		margin: 15px 0px;
+	}
 	.navbar-toggle {
 	position: relative;
 	float: right;
@@ -707,10 +715,9 @@ footer li {
 }
 .mail-title,
 .address {
-	font-size: 28px;
+	font-size: 25px;
 	color: black;
 	font-weight: bold;
-	margin-top: 14px;
 }
 #staff img {
 	width: 180px;
@@ -719,6 +726,10 @@ footer li {
 
 /*====================================*/
 @media (max-width: 360px) {
+
+	#mission .row .col-sm-6 {
+		margin: 15px 0px;
+	}
 	.navbar-toggle {
 	position: relative;
 	float: right;
@@ -744,6 +755,10 @@ footer li {
 		top: -60px;
 		width: 90px;
 	}
+	#mission .row .col-sm-6 {
+		margin: 15px 0px;
+	}
+
 	.welcome {
 		top: 48%;
 	}
@@ -807,15 +822,14 @@ footer li {
 	height: 200px;
 }
 .mail-content a {
-	color: white;
+	color: #888;
 	font-size: 16px;
 }
 .mail-title,
 .address {
-	font-size: 28px;
+	font-size: 25px;
 	color: black;
 	font-weight: bold;
-	margin-top: 14px;
 }
 #staff img {
 	width: 180px;

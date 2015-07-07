@@ -93,7 +93,7 @@
 				<div class="row no-fade">
 					<div class="col-sm-4">
 						<div class="box background background1">
-							<h3>Fresh and alternate thinking.  having a unique and yet practical angle for real life application</h3>
+							<h3>fresh and alternate thinking.  having a unique and yet practical angle for real life application</h3>
 						</div>
 						<div class="icon img-circle">
 							<img src=<?php echo base_url()."images/circle1.png";?> alt="" />
@@ -164,7 +164,7 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
 						<h2>Our People</h2>
-						<h5>
+						<h5 style="font-weight:normal;">
 							<?php echo $team[0]['content'];?></h5>
 						<p>
 							<?php echo $team[1]['content']; ?></p>	
@@ -294,7 +294,7 @@
 		</section> -->
 
 		<!-- ========== TESTIMONIALS END ========== -->
-		<section id="activities">
+		<section id="activities" class="background background3 background-image">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
@@ -330,7 +330,10 @@
 		<!-- ========== ACTIVITIES END ========== -->
 
 		<!-- ========== CONTACT START ========== -->
+		<!--
 		<section class="background background2 background-image" id="contact">
+		-->
+		<section  id="contact">
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-sm-12">
@@ -340,7 +343,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-3">
-						<img height="200px" src="images/contact.png" alt="扫描二维码联系我们">
+						<img height="230px" style="border: 1px solid #CCC" src="images/contact.png" alt="扫描二维码联系我们">
 					</div>
 					<div class="col-sm-3">
 						<div class="mail-title">Telephone</div>
@@ -353,6 +356,9 @@
 						<div class="address">Address</div>
 						<div>Unit 203, Block 16, Lane 118, Rui Jing 1sr Road, Huangpu District, Shanghai, PRC, 200020
 </div>
+						<div class="address">Key Contract</div>
+						<div><strong>kElvin ma<strong> (Chief Wizzard)</div>
+						<div>M:138 178 6605</div>
 					</div>
 					<div class="col-sm-6">
 						<div id="allmap"></div>
